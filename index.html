@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算器</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-family:'Century Gothic','Arial Narrow','Helvetica'
+		}
+		.result-text{
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+			height: 144px;
+			background: #202020;
+			color: #fff;
+			font-size: 75px;
+			text-align: right;
+		}
+		.result-text.small{
+			font-size: 67px;
+		}
+		.keyboard-item{
+			float: left;
+			width: 25vw;
+			height: 25vw;
+			text-align: center;
+			line-height: 25vw;
+			background: #CDCED1;
+			border-left: 1px solid #6A6B6C;
+			border-bottom: 1px solid #6A6B6C;
+			color: #0B0B0B;
+			font-size: 30px;
+			box-sizing: border-box;
+			cursor: pointer;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+		.keyboard-item:active{
+			background: #bbb;
+		}
+		.keyboard-item.orange{
+			color: #fff;
+			background: #F98E12;
+		}
+		.keyboard-item.orange:active{
+			background: #e88511;
+		}
+		.keyboard-item.large{
+			width: 50vw;
+		}
+		::-webkit-scrollbar{
+			width: 0;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="result-text">0</div>
+		<div class="keyboard-box">
+			<div class="keyboard-item reg-btn" onClick="main.reset()">AC</div>
+			<div class="keyboard-item" onClick="main.clickOperat('+/-')">+/-</div>
+			<div class="keyboard-item" onClick="main.clickOperat('%')">%</div>
+			<div class="keyboard-item orange" onClick="main.clickOperat('/')">÷</div>
+			<div class="keyboard-item" onClick="main.clickNumber('7')">7</div>
+			<div class="keyboard-item" onClick="main.clickNumber('8')">8</div>
+			<div class="keyboard-item" onClick="main.clickNumber('9')">9</div>
+			<div class="keyboard-item orange" onClick="main.clickOperat('*')">×</div>
+			<div class="keyboard-item" onClick="main.clickNumber('4')">4</div>
+			<div class="keyboard-item" onClick="main.clickNumber('5')">5</div>
+			<div class="keyboard-item" onClick="main.clickNumber('6')">6</div>
+			<div class="keyboard-item orange" onClick="main.clickOperat('-')">-</div>
+			<div class="keyboard-item" onClick="main.clickNumber('1')">1</div>
+			<div class="keyboard-item" onClick="main.clickNumber('2')">2</div>
+			<div class="keyboard-item" onClick="main.clickNumber('3')">3</div>
+			<div class="keyboard-item orange" onClick="main.clickOperat('+')">+</div>
+			<div class="keyboard-item large" onClick="main.clickNumber('0')">0</div>
+			<div class="keyboard-item" onClick="main.clickNumber('.')">.</div>
+			<div class="keyboard-item orange" onClick="main.getResult()">=</div>
+		</div>
+	</section>
+
+	<script src="static/script/index.js"></script>
+</body>
+</html>
