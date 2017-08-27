@@ -11,9 +11,9 @@ function createWindow() {
         width: 390,
         height: 670,
         fullscreen: false,
-        // resizable: false
+        resizable: false
     });
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
         protocol: 'file',

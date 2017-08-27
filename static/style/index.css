@@ -52,8 +52,11 @@ sup{
     user-select: none;
     -webkit-user-select: none;
 }
+.keyboard-item.active{
+    border: 2px solid #0B0B0B;
+}
 
-.keyboard-item:active {
+.keyboard-item::active {
     background: #bbb;
 }
 
@@ -115,4 +118,15 @@ sup{
 .radic-number-y::before{
     content: 'y';
     top: -33px;
+}
+.log-span{
+    position: relative;
+    padding-right: 10px;
+}
+.log-span:after{
+    position: absolute;
+    right: -3px;
+    top: -5px;
+    content: '10';
+    font-size: 12px;
 }
