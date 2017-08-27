@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Century Gothic', 'Arial Narrow', 'Helvetica'
+}
+sup{
+    font-size: 16px;
+    line-height: 14px;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.result-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 144px;
+    background: #202020;
+    color: #fff;
+    font-size: 75px;
+    text-align: right;
+}
+
+.result-text.small {
+    font-size: 67px;
+}
+
+.keyboard-special{
+    display: none;
+}
+.keyboard-special .keyboard-item{
+    font-family: 'Helvetica';
+    background: #c6c6c6;
+    font-size: 25px;
+}
+.keyboard-item {
+    float: left;
+    width: 25vw;
+    height: 25vw;
+    text-align: center;
+    line-height: 25vw;
+    background: #CDCED1;
+    border-left: 1px solid #6A6B6C;
+    border-bottom: 1px solid #6A6B6C;
+    color: #0B0B0B;
+    font-size: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.keyboard-item:active {
+    background: #bbb;
+}
+
+.keyboard-item.orange {
+    color: #fff;
+    background: #F98E12;
+}
+
+.keyboard-item.orange:active {
+    background: #e88511;
+}
+
+.keyboard-item.large {
+    width: 50vw;
+}
+.horizontal .result-text{
+    height: 80px;
+    font-size: 50px;
+}
+.horizontal .keyboard-box{
+    display: flex;
+}
+.horizontal .keyboard-box .keyboard-special,
+.horizontal .keyboard-box .keyboard-normal{
+    display: block;
+    flex: 1;
+}
+.horizontal .keyboard-item{
+    width: 12.5vw;
+    height: 10vw;
+    line-height: 10vw; 
+}
+.horizontal .keyboard-item.large{
+    width: 25vw;
+}
+
+.radic-span{
+    font-size: 25px;
+    line-height: 40px;
+}
+.radic-number{
+    position: relative;
+    font-size: 23px;
+    padding: 0 3px;
+    border-top: 2px solid #202020;
+}
+.radic-number-2::before,
+.radic-number-3::before,
+.radic-number-y::before{
+    position: absolute;
+    left: -11px;
+    top: -31px;
+    content: '2';
+    font-size: 12px;
+}
+.radic-number-3::before{
+    content: '3';
+}
+.radic-number-y::before{
+    content: 'y';
+    top: -33px;
+}

@@ -10,7 +10,8 @@
   "author": "linxin",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.7.5"
+    "electron": "^1.7.5",
+    "mathjs": "^3.16.2"
   },
   "devDependencies": {
     "electron-packager": "^8.7.2"

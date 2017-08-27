@@ -1,5 +1,5 @@
 # calculator
-Electron + JavaScript 实现的计算器
+基于 Electron + javascript 实现的桌面计算器应用
 
 ## 效果图
 ![Image text](https://github.com/lin-xin/calculator/raw/master/screenshot/calculator.png)
