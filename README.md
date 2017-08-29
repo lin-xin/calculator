@@ -2,7 +2,8 @@
 基于 Electron + javascript 实现的桌面计算器应用
 
 ## 效果图
-![Image text](https://github.com/lin-xin/calculator/raw/master/screenshot/calculator.png)
+![Image text](https://github.com/lin-xin/calculator/raw/master/screenshot/calc1.jpg)
+![Image text](https://github.com/lin-xin/calculator/raw/master/screenshot/calc2.jpg)
 
 ## 运行
 ```
