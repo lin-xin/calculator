@@ -1,19 +1,29 @@
 {
   "name": "calculator",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "基于 Electron + javascript 实现的桌面计算器应用",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build:win": "electron-packager ./ 计算器 --overwrite --platform=win32 --ignore=node_modules"
+    "build:win": "electron-packager ./ 计算器 --platform=win32 --overwrite --icon=./icon.ico",
+    "dist": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.linxin.calculator",
+    "productName": "计算器",
+    "electronVersion": "1.7.5",
+    "win": {
+      "icon": "./static/icon.ico"
+    }
   },
   "author": "linxin",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.7.5",
     "mathjs": "^3.16.2"
   },
   "devDependencies": {
+    "electron": "^1.7.5",
+    "electron-builder": "^19.26.0",
     "electron-packager": "^8.7.2"
   }
 }

@@ -1,3 +1,4 @@
 .DS_Store
 node_modules/
 计算器-win32-x64/
+dist/
