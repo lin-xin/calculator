@@ -1,5 +1,7 @@
 # calculator
-基于 Electron + javascript 实现的桌面计算器应用
+基于 Electron + javascript 实现的桌面计算器应用。
+
+相关文章：[Electron 实战桌面计算器应用](https://github.com/lin-xin/blog/issues/22)
 
 ## 介绍
 我这里通过 Electron 实现了仿 iPhone 的计算器，通过菜单可以切换横屏和竖屏，横屏有更多的运算。
@@ -20,8 +22,6 @@
 
 - windows 7
 - Electron v1.7.5
-
-
 
 ## 运行
 ```
